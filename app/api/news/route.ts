@@ -5,7 +5,7 @@ export async function GET(request: NextRequest) {
   const category = searchParams.get("category") || "general"
   const search = searchParams.get("search") || ""
 
-  const API_KEY = process.env.NEWS_API_KEY
+  const API_KEY = "365b1412e2d34c7a9801abb308c3fe0c"
 
   if (!API_KEY) {
     return NextResponse.json({ error: "API key not configured" }, { status: 500 })
